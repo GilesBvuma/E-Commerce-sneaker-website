@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cartt.css">
+    <script src="addtocart.js" defer></script>
+</head>
+<body>
+  <header class="main-navigation">
+    <div>
+      <img src="./images/logo.png" height="50px" alt="company-logo" />
+    </div>
+    <div class="nav-links">
+      <a href="./index.php">Home</a>
+      <a href="#">Products</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="nav-btns" id="nav-btns">
+      <input type="search" placeholder="🔍Search" id="search-btn" />
+      <a id="profile-link"><div class="emoj"><img src="./icons/account_circle.svg"/></div>Profile</a>
+  </div>
+  </header>
+    <div class="container">
+        <h2>Shopping Cart</h2>
+        <ul class="cart-items"></ul>
+        <div class="cart-total">Total: $0.00</div>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        <button onclick="location.href='male.php'">Back to Products</button>
+    </div>
+</body>
+</html>
